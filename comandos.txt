@@ -1,0 +1,16 @@
+agregar 
+curl -X POST -H "Content-Type: application/json" -d '{"nombre": "Producto nuevo", "precio": 10.99}' http://localhost:3000/productos
+
+eliminar
+curl -X DELETE http://localhost:3000/productos/5
+
+actulizar 
+curl -X PUT -H "Content-Type: application/json" -d '{"nombre": "manzanas", "precio": 20}' http://localhost:3000/productos/4
+
+
+leer un producto por su id 
+curl http://localhost:3000/productos/4
+
+
+leer todos los productos
+curl http://localhost:3000/productos
